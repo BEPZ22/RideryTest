@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="2.0030" tests="16" failures="2">
+  <testsuite name="Root Suite" timestamp="2023-05-13T19:33:23" tests="0" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="stock_trades_api_hard" timestamp="2023-05-13T19:33:23" tests="16" file="/home/bpicon/Ridery/Test/RideryTest/test/index.spec.js" time="2.0030" failures="2">
+    <testcase name="stock_trades_api_hard &quot;before each&quot; hook for &quot;should create a new trade of buy type&quot;" time="2.0020" classname="&quot;before each&quot; hook for &quot;should create a new trade of buy type&quot;">
+      <failure message="Timeout of 2000ms exceeded. For async tests and hooks, ensure &quot;done()&quot; is called; if returning a Promise, ensure it resolves. (/home/bpicon/Ridery/Test/RideryTest/test/index.spec.js)" type="Error"><![CDATA[Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure "done()" is called; if returning a Promise, ensure it resolves. (/home/bpicon/Ridery/Test/RideryTest/test/index.spec.js)
+    at listOnTimeout (internal/timers.js:557:17)
+    at processTimers (internal/timers.js:500:7)]]></failure>
+    </testcase>
+    <testcase name="stock_trades_api_hard &quot;after all&quot; hook for &quot;should get 405 for a delete request to /trades/:id&quot;" time="0.0010" classname="&quot;after all&quot; hook for &quot;should get 405 for a delete request to /trades/:id&quot;">
+      <failure message="Cannot read property &apos;connection&apos; of undefined" type="TypeError"><![CDATA[TypeError: Cannot read property 'connection' of undefined
+    at MongooseConnection.closeConnection (lib/mongoose.connection.js:71:32)
+    at Context.<anonymous> (test/index.spec.js:68:33)
+    at processImmediate (internal/timers.js:464:21)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>
